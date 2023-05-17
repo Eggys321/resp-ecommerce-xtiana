@@ -14,12 +14,12 @@ const SingleProduct = () => {
       <div className='container'>
         <h2> {loading && <ClipLoader color={'red'} size={50} />}</h2>
         <div className='row justify-content-between align-items-center mt-4'>
-          <div className='col-sm-12 col-lg-4'>
-            <img className='img-fluid w-100' src={image} alt={title} />
+          <div className='col-sm-12 text-center col-md-4 '>
+            <img className='img-fluid w-100 ' src={image} alt={title} />
           </div>
-          <div className='col-sm-12 col-lg-7'>
+          <div className='col-sm-12 col-md-7'>
             <h1 className='text-danger fw-bold'> {title} </h1>
-            <h4 className='text-success'> {description} </h4>
+            <h4 className='text-success lh-base'> {description} </h4>
             <h3>${price} </h3>
 
             <div className='d-flex justify-content-between'>

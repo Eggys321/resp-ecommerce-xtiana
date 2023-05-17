@@ -1,12 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Marque from './Marque'
 import { Link } from 'react-router-dom'
-import '../styles/Navbar.css';
+import '../styles/Navbar.css'
 import { BsCart4 } from 'react-icons/bs'
 
-
-
-const Navbar = () => {
+const Navbar = ({cartItem}) => {
   return (
     <div className='sticky-top'>
       <Marque />
@@ -22,12 +20,12 @@ const Navbar = () => {
 
           <nav className='w-50 d-flex flex-row-reverse justify-content-between'>
             <ul className='d-sm-none d-md-flex justify-content-between w-75 '>
-              <li className='list-unstyled ss'>
-                <Link className='text-decoration-none text-light fs-4 ' to='/'>
+              <li className='list-unstyled  d-none-x-sm'>
+                <Link className='text-decoration-none text-light fs-4' to='/'>
                   Account
                 </Link>
               </li>
-              <li className='list-unstyled ss'>
+              <li className='list-unstyled d-none-x-sm'>
                 <Link className='text-decoration-none text-light fs-4 ' to='/'>
                   Help
                 </Link>
@@ -37,8 +35,8 @@ const Navbar = () => {
                   to='/Cart'
                   className='text-decoration-none text-light fs-4'
                 >
-                  <BsCart4 />
-                  Cart
+                  {/* <BsCart4 /> */}
+                  Cart ({cartItem.length})
                 </Link>
               </li>
             </ul>
