@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import Marque from './Marque'
 import { Link } from 'react-router-dom'
 import '../styles/Navbar.css'
-import { BsCart4 } from 'react-icons/bs'
+import { BsCart4 } from 'react-icons/bs';
+import CartContext from '../Hooks/CartContext';
 
-const Navbar = ({cartItem}) => {
+
+const Navbar = () => {
+  const {cartItem} = useContext(CartContext)
   return (
     <div className='sticky-top'>
       <Marque />
@@ -35,8 +38,8 @@ const Navbar = ({cartItem}) => {
                   to='/Cart'
                   className='text-decoration-none text-light fs-4'
                 >
-                  {/* <BsCart4 /> */}
-                  Cart ({cartItem.length})
+                  <BsCart4 />
+                  ({cartItem.length})
                 </Link>
               </li>
             </ul>

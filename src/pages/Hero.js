@@ -1,11 +1,16 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import '../styles/Hero.css'
 import useFetch from '../Hooks/useFetch'
 import ClipLoader from 'react-spinners/ClipLoader'
 import { Link } from 'react-router-dom'
-import { ToastContainer, toast } from 'react-toastify'
+import { ToastContainer, toast } from 'react-toastify';
+import CartContext from '../Hooks/CartContext'
 
-const Hero = ({ cartItem, setCartItem, handleAddToCart }) => {
+
+const Hero = () => {
+    const { handleAddToCart } = useContext(CartContext)
+
+  
   const {
     data: data2,
     loading: loading2,
