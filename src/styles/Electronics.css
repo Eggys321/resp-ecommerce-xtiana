@@ -20,13 +20,13 @@
 }
 
 .card-inner-electronics {
-    height: 100px;
+    /* height: 100px; */
 }
 
 .card-container-electronics img {
     width: 7rem;
     margin: auto;
-    height: 300px;
+    height: 200px;
 }
 
 @media (max-width:425px) {

@@ -5,6 +5,7 @@ import Hero from '../pages/Hero';
 import LastPage from '../pages/LastPage';
 import Electronics from '../pages/Electronics';
 import Women from '../pages/Women';
+import Jewelry from '../pages/Jewelry';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Hero/>
       <Electronics/>
       <Women/>
+      <Jewelry/>
       <LastPage/>
     </div>
   )

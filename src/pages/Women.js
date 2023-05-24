@@ -20,10 +20,10 @@ const Women = () => {
   return (
     <div className='container'>
       <h2>{Loading && <ClipLoader />} </h2>
-      <div className='component-title-jewelry'>
+      <div className='component-title-women'>
         <h2>WOMEN CATEGORY</h2>
       </div>
-      <div className='component-data-mapped-jewelry'>
+      <div className='component-data-mapped-women'>
         {data.map((datumWomen) => {
           const { id, image, price, title } = datumWomen
           return (
@@ -48,7 +48,6 @@ const Women = () => {
             </div>
           )
         })}
-              
       </div>
     </div>
   )

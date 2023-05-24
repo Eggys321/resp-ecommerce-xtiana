@@ -1,4 +1,4 @@
-.component-title-jewelry {
+.component-title-women {
     background-color: #94004f;
     color: white;
     border-top-left-radius: 10px;
@@ -11,7 +11,7 @@
 
 }
 
-.component-data-mapped-jewelry {
+.component-data-mapped-women{
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -21,14 +21,14 @@
     text-align: center;
     /* justify-content: center; */
     align-items: center;
-    gap: 15px;
+    gap: 1px;
 }
 
 
 .component-data-inner-women img {
     /* max-width: 10rem; */
-    width: 20rem;
-    height: 20rem;
+    width: 14.5rem;
+    height: 16rem;
     padding: 30px;
     /* box-shadow: 0 0 5px -2px inset #141111; */
 }

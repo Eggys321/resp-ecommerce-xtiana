@@ -1,9 +1,10 @@
-import React,{useContext} from 'react';
+import React,{useContext,useEffect} from 'react';
 import { useParams,Link } from 'react-router-dom';
 import useFetch from '../Hooks/useFetch';
 import ClipLoader from 'react-spinners/ClipLoader';
 import CartContext from '../Hooks/CartContext';
-import { ToastContainer, toast } from 'react-toastify'
+import { ToastContainer, toast } from 'react-toastify';
+import '../styles/SingleProduct.css'
 
 
 
@@ -18,10 +19,17 @@ const SingleProduct = () => {
          position: toast.POSITION.TOP_CENTER,
        })
      }
+     useEffect(() => {
+       window.scroll({
+         top: 0,
+         left: 0,
+         behavior: 'smooth',
+       })
+     }, [data])
 
   return (
     <div>
-      <div className='container'>
+      <div className='container single-component-container'>
         <h2> {loading && <ClipLoader color={'red'} size={50} />}</h2>
         <div className='row justify-content-between align-items-center mt-4'>
           <div className='col-sm-12 text-center col-md-4 '>

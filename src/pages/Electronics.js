@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import CartContext from '../Hooks/CartContext';
 import '../styles/Electronics.css';
-import '../styles/Women.css';
+
 
 const Electronics = () => {
   const { cartItem, setCartItem, handleAddToCart } = useContext(CartContext)
@@ -34,7 +34,7 @@ const Electronics = () => {
                 className='text-decoration-none'
                 to={`/SingleProduct/${id}`}
               >
-                <img className='img-fluid p-4 w-100' src={image} alt={title} />
+                <img className='img-fluid p-2 w-100' src={image} alt={title} />
                 <p className='fw-bold'>${price} </p>
               </Link>
               <button
