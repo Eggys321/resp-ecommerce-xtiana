@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import '../styles/Home.css';
 import Hero from '../pages/Hero';
 // import Jewelry from '../pages/Jewelry';
@@ -8,6 +8,13 @@ import Women from '../pages/Women';
 import Jewelry from '../pages/Jewelry';
 
 const Home = () => {
+   useEffect(() => {
+     window.scroll({
+       top: 0,
+       left: 0,
+       behavior: 'smooth',
+     })
+   }, [])
   return (
     <div className='container'>
       {/* <Hero
